@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style type="text/css" media="screen">
+table, th, td {
+    border: 3px solid whitesmoke;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    color:white;
+    font-weight: lighter;
+}
+    tr:hover {background-color:steelblue;}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align:center;
+    font-weight: lighter;
+}
+
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+form{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    font-weight: lighter;
+}
+
+input{
+    font-size: 30px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 10pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkcyan;
+    background: lightblue;
+    box-shadow: 3px 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+div{
+    padding:50px;
+    margin:80px;
+    background-image: url("./ProjectBackground.jpg");
+    background-size:cover;
+}
+</style>
+</head>
+
+<body>
+    <div>
+    <h1>Inventory Overview</h1>
+    <table style="text-align:center; width:80%" id= "tableInventory">
+        <tr>
+            <th>Product</th>
+            <th>Current Stock</th>
+            <th>Add Stock</th>
+            <th>Date of Re-stock</th>
+            <th>New Stock</th>
+            <th>Stock Status</th>
+        </tr>
+    </table>
+    
+    <form>
+        <br>
+        <fieldset><br>
+        <legend>Product Information</legend>
+        Product Name:<br>
+        <input type="text" name="Product Name" id="productName" value=""><br><br>
+        Current Stock:<br>
+        <input type="text" name="Current Stock" id="currentStock" value=""><br><br>
+        Add Stock:<br>
+        <input type="text" name="Add Stock" id="addStock" value=""><br><br>
+        Date of Re-stock:<br>
+        <input type="date" name="Date of Re-stock" id=dateOfRestock value=""><br><br>
+
+        <button type="button" onclick="addProduct()">SUBMIT</button>
+        <button type="button"><a href="WelcomePage.html">BACK TO HOME</a></button>
+    </fieldset>    
+    </form>
+</div>
+<script src="FinalProject.js"></script>
+</body> 
+</html>

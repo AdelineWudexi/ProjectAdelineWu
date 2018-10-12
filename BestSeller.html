@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;
+max-width: 3000px;
+height:400px;
+}
+
+.slideshow-container {
+  max-width: 3000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:blue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color:lightseagreen;
+  color: yellowgreen;
+}
+
+h2{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+
+body{
+    padding:25px;
+    margin:25px;
+    background-image: url("./ProjectBackground.jpg");
+    background-size:cover;
+}
+
+p{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 10pt;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkcyan;
+    background: lightblue;
+    box-shadow: 3px 3px;
+}
+
+a{
+    text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center">Best Selling Product 2018</h2>
+
+<p>Racket Category:</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="raket1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="raket2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="raket3.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+        <img src="raket4.jpg" style="width: 100%">
+    </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<p>Shoes Category:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="sepatu1.png" style="width: 100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="sepatu2.png" style="width: 100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="sepatu3.png" style="width: 100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a><br><br>
+</div>
+
+<button type="button"><a href="WelcomePage.html">BACK TO HOME</a></button>
+
+<script src="FinalProject.js"></script>
+</body>
+</html>
